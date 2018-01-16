@@ -71,6 +71,7 @@ public class Insertion {
 
         // 以下使用比较器指定对 Transaction类 排序
         // 学习使用Comparator比较器
+        System.out.println();
         Date d1 = new Date(5, 21, 2016);
         Date d2 = new Date(6, 22, 2017);
         Transaction t1 = new Transaction("xyz", d1, 9800);
