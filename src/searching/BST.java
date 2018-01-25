@@ -4,7 +4,7 @@ import fundanmentals.Queue;
 
 /**
  * Created by hailong on 3/12/17.
- * 3-3 有序的泛型符号表：基于二叉查找树实现
+ * 3-3 有序的泛型符号表：基于数据结构二叉查找树实现
  * BST：二叉查找树
  * 主要实现：size，get，put，min，floor，select，rank，deleteMin，delete，keys方法(中序遍历，理解)
  * 以上全部使用 递归 实现
@@ -187,6 +187,10 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     public boolean contains(Key key) {
         return get(key) != null;
+    }
+
+    public boolean isEmpty() {
+        return size() == 0;
     }
 
     public static void main(String[] args) {
